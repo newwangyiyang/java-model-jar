@@ -9,6 +9,7 @@ import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -117,6 +118,62 @@ public class UploadUtils {
         return url;
     }
 
+
+    /**
+     *
+     * upload:(新版文件上传). <br/>
+     *
+     * 在jar包运行的同级目录创建upload文件夹，对前端上传的文件进行保存
+     *
+     * 同时在application.yml配置文件中配置静态文件访问路径
+     *
+     * 例如: web.upload-path=D:/workspace/model/upload/
+     *
+     * 访问该静态资源localhost:8080/20181014/xxxx.jpg
+     *
+     * 切记不包含upload/路径
+     *
+     * @author wangtt@wstro
+     * @param file
+     * @param request
+     * @return
+     * @throws Exception
+     * @since
+     */
+    public static String uploadJar(MultipartFile file)
+            throws Exception {
+        // 日期，用于按日生成文件夹
+        String dateStr = DateFormatUtils.format(new Date(), "yyyyMMdd");
+        // 利用文件名和时间生成UUID
+        String uuidThread = uuidLocal.get();
+        // 文件名
+        String filename = file.getOriginalFilename();
+        long currentTimeMillis = System.currentTimeMillis();
+        if (uuidThread == null) {
+            UUID uuid = UUID.nameUUIDFromBytes((currentTimeMillis + filename)
+                    .getBytes());
+            uuid = UUID.nameUUIDFromBytes((currentTimeMillis + uuid.toString())
+                    .getBytes());
+            uuidThread = uuid.toString();
+            uuidLocal.set(uuidThread);
+        } else {
+            uuidThread = uuidThread + 1;
+            uuidLocal.set(uuidThread);
+        }
+
+        logger.info("【图片路劲生成策略：】currentTimeMillis:" + currentTimeMillis
+                + ",filename:" + filename + "=" + uuidThread);
+        // 文件保存位置
+        String url = dateStr + "/" + uuidThread+ filename.substring(filename.lastIndexOf("."));
+        logger.info("【文件路径：】" + url);
+        //在jar包运行同级目录，创建upload文件夹，用于保存前端上传的图片
+        ClassPathResource resource = new ClassPathResource("upload/");
+        String filePath = resource.getPath() + url;
+        logger.info("文件保存路径测试{}", filePath);
+        FileUtils.copyInputStreamToFile(file.getInputStream(), new File(
+                filePath));
+        return url;
+    }
     /**
      * 文件上传
      *

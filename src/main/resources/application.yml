@@ -3,6 +3,11 @@ server:
   port: 8080
   session-timeout: 1800
 
+
+#定义上传文件的路径
+web:
+  upload-path: D:/workspace/model/target/upload/
+
 spring:
   jackson:
       time-zone: GMT+8
@@ -27,6 +32,12 @@ spring:
       expose-request-attributes: true
       expose-session-attributes: true
       request-context-attribute: request
+  #指定上传图片静态文件的位置，用于通过url精心访问
+  mvc:
+    static-path-pattern: /**
+  resources:
+#      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
+      static-locations: file:${web.upload-path}
 
 mybatis:
   configuration:
