@@ -6,7 +6,7 @@
 	<groupId>cn.yiyang.wang</groupId>
 	<artifactId>model</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>model</name>
 	<description>Demo project for Spring Boot</description>
@@ -183,11 +183,12 @@
 
 	<build>
 		<plugins>
+            <!--该插件打成的war包可直接通过java -jar 进行运行-->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-            <!--war包需要以下配置-->
+            <!--&lt;!&ndash;该插件打成的war包只能在tomcat中运行&ndash;&gt;-->
             <!--<plugin>-->
                 <!--<artifactId>maven-war-plugin</artifactId>-->
                 <!--<configuration>-->
@@ -197,7 +198,7 @@
                     <!--<warName>model</warName>-->
                 <!--</configuration>-->
             <!--</plugin>-->
-            <!-- 让打包的时候跳过测试代码 -->
+            <!--&lt;!&ndash; 让打包的时候跳过测试代码 &ndash;&gt;-->
             <!--<plugin>-->
                 <!--<groupId>org.apache.maven.plugins</groupId>-->
                 <!--<artifactId>maven-surefire-plugin</artifactId>-->
