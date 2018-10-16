@@ -1,0 +1,413 @@
+2018-10-16 16:23:02 -Starting ModelApplication on FW757PBH1J4RION with PID 9164 (D:\workspace\java-model-jar\target\classes started by Administrator in D:\workspace\java-model-jar)
+2018-10-16 16:23:02 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-16 16:23:02 -The following profiles are active: dev
+2018-10-16 16:23:02 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bf9de98: startup date [Tue Oct 16 16:23:02 CST 2018]; root of context hierarchy
+2018-10-16 16:23:03 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-16 16:23:04 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f18f20cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 16:23:04 -Tomcat initialized with port(s): 8888 (http)
+2018-10-16 16:23:04 -Initializing ProtocolHandler ["http-nio-8888"]
+2018-10-16 16:23:04 -Starting service [Tomcat]
+2018-10-16 16:23:04 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-16 16:23:04 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-16 16:23:04 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-16 16:23:04 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-16 16:23:05 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-16 16:23:06 -Initializing Spring embedded WebApplicationContext
+2018-10-16 16:23:06 -Root WebApplicationContext: initialization completed in 3347 ms
+2018-10-16 16:23:06 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-16 16:23:06 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-16 16:23:06 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-16 16:23:06 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-16 16:23:06 -Filter xssFilter was not registered (disabled)
+2018-10-16 16:23:06 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-16 16:23:06 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-16 16:23:06 -Servlet dispatcherServlet mapped to [/]
+2018-10-16 16:23:07 -Mapped "{[/user/exportWord],methods=[GET]}" onto public void cn.yiyang.model.controller.UserController.exportWord(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-10-16 16:23:07 -Mapped "{[/user/getUserById],methods=[GET]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.model.controller.UserController.getUserById(java.lang.String)
+2018-10-16 16:23:07 -Mapped "{[/user/uploadImg],methods=[POST]}" onto public void cn.yiyang.model.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-10-16 16:23:07 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-16 16:23:07 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-16 16:23:07 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-16 16:23:07 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-16 16:23:07 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-16 16:23:07 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-16 16:23:07 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:23:07 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bf9de98: startup date [Tue Oct 16 16:23:02 CST 2018]; root of context hierarchy
+2018-10-16 16:23:07 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:23:07 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:23:08 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-16 16:23:08 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-16 16:23:08 -LiveReload server is running on port 35729
+2018-10-16 16:23:08 -Registering beans for JMX exposure on startup
+2018-10-16 16:23:08 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-16 16:23:08 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-16 16:23:08 -Starting beans in phase 2147483647
+2018-10-16 16:23:08 -Context refreshed
+2018-10-16 16:23:08 -Found 1 custom documentation plugin(s)
+2018-10-16 16:23:08 -Scanning for api listing references
+2018-10-16 16:23:09 -Starting ProtocolHandler ["http-nio-8888"]
+2018-10-16 16:23:09 -Failed to start connector [Connector[HTTP/1.1-8888]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8888]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at cn.yiyang.ModelApplication.main(ModelApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+2018-10-16 16:23:09 -Pausing ProtocolHandler ["http-nio-8888"]
+2018-10-16 16:23:09 -Stopping service [Tomcat]
+2018-10-16 16:23:09 -The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-10-16 16:23:09 -Stopping ProtocolHandler ["http-nio-8888"]
+2018-10-16 16:23:09 -Destroying ProtocolHandler ["http-nio-8888"]
+2018-10-16 16:23:09 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-16 16:23:09 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8888 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8888, or configure this application to listen on another port.
+
+2018-10-16 16:23:09 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bf9de98: startup date [Tue Oct 16 16:23:02 CST 2018]; root of context hierarchy
+2018-10-16 16:23:09 -Stopping beans in phase 2147483647
+2018-10-16 16:23:09 -Unregistering JMX-exposed beans on shutdown
+2018-10-16 16:23:09 -Unregistering JMX-exposed beans
+2018-10-16 16:23:29 -Starting ModelApplication on FW757PBH1J4RION with PID 33580 (D:\workspace\java-model-jar\target\classes started by Administrator in D:\workspace\java-model-jar)
+2018-10-16 16:23:29 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-16 16:23:29 -The following profiles are active: dev
+2018-10-16 16:23:29 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bf53c46: startup date [Tue Oct 16 16:23:29 CST 2018]; root of context hierarchy
+2018-10-16 16:23:30 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-16 16:23:30 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$311b60a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 16:23:31 -Tomcat initialized with port(s): 8082 (http)
+2018-10-16 16:23:31 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-16 16:23:31 -Starting service [Tomcat]
+2018-10-16 16:23:31 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-16 16:23:31 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-16 16:23:31 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-16 16:23:31 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-16 16:23:32 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-16 16:23:32 -Initializing Spring embedded WebApplicationContext
+2018-10-16 16:23:32 -Root WebApplicationContext: initialization completed in 2707 ms
+2018-10-16 16:23:32 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-16 16:23:32 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-16 16:23:32 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-16 16:23:32 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-16 16:23:32 -Filter xssFilter was not registered (disabled)
+2018-10-16 16:23:32 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-16 16:23:32 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-16 16:23:32 -Servlet dispatcherServlet mapped to [/]
+2018-10-16 16:23:33 -Mapped "{[/user/exportWord],methods=[GET]}" onto public void cn.yiyang.model.controller.UserController.exportWord(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-10-16 16:23:33 -Mapped "{[/user/getUserById],methods=[GET]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.model.controller.UserController.getUserById(java.lang.String)
+2018-10-16 16:23:33 -Mapped "{[/user/uploadImg],methods=[POST]}" onto public void cn.yiyang.model.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-10-16 16:23:33 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-16 16:23:33 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-16 16:23:33 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-16 16:23:33 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-16 16:23:33 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-16 16:23:33 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-16 16:23:33 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:23:33 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bf53c46: startup date [Tue Oct 16 16:23:29 CST 2018]; root of context hierarchy
+2018-10-16 16:23:33 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:23:33 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:23:33 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-16 16:23:34 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-16 16:23:34 -LiveReload server is running on port 35729
+2018-10-16 16:23:34 -Registering beans for JMX exposure on startup
+2018-10-16 16:23:34 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-16 16:23:34 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-16 16:23:34 -Starting beans in phase 2147483647
+2018-10-16 16:23:34 -Context refreshed
+2018-10-16 16:23:34 -Found 1 custom documentation plugin(s)
+2018-10-16 16:23:34 -Scanning for api listing references
+2018-10-16 16:23:34 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-16 16:23:34 -Using a shared selector for servlet write/read
+2018-10-16 16:23:34 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-16 16:23:34 -Started ModelApplication in 5.298 seconds (JVM running for 5.977)
+2018-10-16 16:25:12 -Starting ModelApplication on FW757PBH1J4RION with PID 23948 (D:\workspace\java-model-jar\target\classes started by Administrator in D:\workspace\java-model-jar)
+2018-10-16 16:25:12 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-16 16:25:12 -The following profiles are active: dev
+2018-10-16 16:25:12 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d4c120f: startup date [Tue Oct 16 16:25:12 CST 2018]; root of context hierarchy
+2018-10-16 16:25:13 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-16 16:25:13 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c2c1358b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 16:25:14 -Tomcat initialized with port(s): 8082 (http)
+2018-10-16 16:25:14 -Initializing ProtocolHandler ["http-nio-8082"]
+2018-10-16 16:25:14 -Starting service [Tomcat]
+2018-10-16 16:25:14 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-16 16:25:14 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-16 16:25:14 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-16 16:25:14 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-16 16:25:15 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-16 16:25:15 -Initializing Spring embedded WebApplicationContext
+2018-10-16 16:25:15 -Root WebApplicationContext: initialization completed in 2713 ms
+2018-10-16 16:25:15 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-16 16:25:15 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-16 16:25:15 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-16 16:25:15 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-16 16:25:15 -Filter xssFilter was not registered (disabled)
+2018-10-16 16:25:15 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-16 16:25:15 -Servlet statViewServlet mapped to [/druid/*]
+2018-10-16 16:25:15 -Servlet dispatcherServlet mapped to [/]
+2018-10-16 16:25:16 -Mapped "{[/user/exportWord],methods=[GET]}" onto public void cn.yiyang.model.controller.UserController.exportWord(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-10-16 16:25:16 -Mapped "{[/user/getUserById],methods=[GET]}" onto public cn.yiyang.common.utils.ResultBean cn.yiyang.model.controller.UserController.getUserById(java.lang.String)
+2018-10-16 16:25:16 -Mapped "{[/user/uploadImg],methods=[POST]}" onto public void cn.yiyang.model.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-10-16 16:25:16 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-16 16:25:16 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-16 16:25:16 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-16 16:25:16 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-16 16:25:16 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-16 16:25:16 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-16 16:25:16 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:25:16 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d4c120f: startup date [Tue Oct 16 16:25:12 CST 2018]; root of context hierarchy
+2018-10-16 16:25:16 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:25:16 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:25:16 -Detected @ExceptionHandler methods in WYYExceptionHandler
+2018-10-16 16:25:16 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-16 16:25:17 -LiveReload server is running on port 35729
+2018-10-16 16:25:17 -Registering beans for JMX exposure on startup
+2018-10-16 16:25:17 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-16 16:25:17 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-16 16:25:17 -Starting beans in phase 2147483647
+2018-10-16 16:25:17 -Context refreshed
+2018-10-16 16:25:17 -Found 1 custom documentation plugin(s)
+2018-10-16 16:25:17 -Scanning for api listing references
+2018-10-16 16:25:17 -Starting ProtocolHandler ["http-nio-8082"]
+2018-10-16 16:25:17 -Using a shared selector for servlet write/read
+2018-10-16 16:25:17 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-16 16:25:17 -Started ModelApplication in 5.376 seconds (JVM running for 6.046)
+2018-10-16 16:31:46 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d4c120f: startup date [Tue Oct 16 16:25:12 CST 2018]; root of context hierarchy
+2018-10-16 16:31:46 -Stopping beans in phase 2147483647
+2018-10-16 16:31:46 -Unregistering JMX-exposed beans on shutdown
+2018-10-16 16:31:46 -Unregistering JMX-exposed beans
+2018-10-16 16:31:54 -Starting ModelApplication on FW757PBH1J4RION with PID 23948 (D:\workspace\java-model-jar\target\classes started by Administrator in D:\workspace\java-model-jar)
+2018-10-16 16:31:54 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-16 16:31:54 -The following profiles are active: dev
+2018-10-16 16:31:54 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1915f214: startup date [Tue Oct 16 16:31:54 CST 2018]; root of context hierarchy
+2018-10-16 16:31:54 -No MyBatis mapper was found in '[cn.yiyang.*.dao]' package. Please check your configuration.
+2018-10-16 16:31:54 -No MyBatis mapper was found in '[cn.yiyang]' package. Please check your configuration.
+2018-10-16 16:31:54 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-16 16:31:54 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c2c1358b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 16:31:54 -Tomcat initialized with port(s): 8082 (http)
+2018-10-16 16:31:54 -Starting service [Tomcat]
+2018-10-16 16:31:54 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-16 16:31:54 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-16 16:31:54 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-16 16:31:54 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-16 16:31:54 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-16 16:31:54 -Initializing Spring embedded WebApplicationContext
+2018-10-16 16:31:54 -Root WebApplicationContext: initialization completed in 430 ms
+2018-10-16 16:31:54 -Servlet dispatcherServlet mapped to [/]
+2018-10-16 16:31:54 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-16 16:31:54 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-16 16:31:54 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-16 16:31:54 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-16 16:31:54 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:31:54 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1915f214: startup date [Tue Oct 16 16:31:54 CST 2018]; root of context hierarchy
+2018-10-16 16:31:54 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-16 16:31:54 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-16 16:31:54 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:31:54 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:31:54 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\workspace\java-model-jar\target\classes\mybatis\model\UserDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+2018-10-16 16:31:54 -Stopping service [Tomcat]
+2018-10-16 16:31:54 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-16 16:31:54 -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\workspace\java-model-jar\target\classes\mybatis\model\UserDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at cn.yiyang.ModelApplication.main(ModelApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\workspace\java-model-jar\target\classes\mybatis\model\UserDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	... 23 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\workspace\java-model-jar\target\classes\mybatis\model\UserDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:546)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:130)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f59586bb.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f59586bb$$FastClassBySpringCGLIB$$8a96c057.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f59586bb.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:520)
+	... 37 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:74)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 43 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: User
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 45 common frames omitted
+2018-10-16 16:43:43 -Starting ModelApplication on FW757PBH1J4RION with PID 23948 (D:\workspace\java-model-jar\target\classes started by Administrator in D:\workspace\java-model-jar)
+2018-10-16 16:43:43 -Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-16 16:43:43 -The following profiles are active: dev
+2018-10-16 16:43:43 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d486565: startup date [Tue Oct 16 16:43:43 CST 2018]; root of context hierarchy
+2018-10-16 16:43:43 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-16 16:43:43 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c2c1358b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-16 16:43:44 -Tomcat initialized with port(s): 8082 (http)
+2018-10-16 16:43:44 -Starting service [Tomcat]
+2018-10-16 16:43:44 -Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-16 16:43:44 -Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2018-10-16 16:43:44 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-10-16 16:43:44 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-10-16 16:43:44 -OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2018-10-16 16:43:44 -Initializing Spring embedded WebApplicationContext
+2018-10-16 16:43:44 -Root WebApplicationContext: initialization completed in 912 ms
+2018-10-16 16:43:44 -Servlet dispatcherServlet mapped to [/]
+2018-10-16 16:43:44 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-16 16:43:44 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-16 16:43:44 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-16 16:43:44 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-16 16:43:44 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-16 16:43:44 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-16 16:43:44 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-16 16:43:44 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-16 16:43:44 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-16 16:43:44 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-16 16:43:44 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:43:44 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d486565: startup date [Tue Oct 16 16:43:43 CST 2018]; root of context hierarchy
+2018-10-16 16:43:44 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:43:44 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-16 16:43:45 -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-16 16:43:45 -LiveReload server is running on port 35729
+2018-10-16 16:43:45 -Registering beans for JMX exposure on startup
+2018-10-16 16:43:45 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-16 16:43:45 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-16 16:43:45 -Starting beans in phase 2147483647
+2018-10-16 16:43:45 -Context refreshed
+2018-10-16 16:43:45 -Found 1 custom documentation plugin(s)
+2018-10-16 16:43:45 -Scanning for api listing references
+2018-10-16 16:43:45 -Tomcat started on port(s): 8082 (http) with context path ''
+2018-10-16 16:43:45 -Started ModelApplication in 2.135 seconds (JVM running for 1113.953)
+2018-10-16 16:43:45 -Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 2 matched 0 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) matched (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DevToolsDataSourceAutoConfiguration matched:
+      - DevTools DataSource Condition found auto-configured DataSource (DevToolsDataSourceAutoConfiguration.DevToolsDataSourceCondition)
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   RedisAutoConfiguration#redisTemplate matched:
+      - @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+
+Negative matches:
+-----------------
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+

@@ -1,6 +1,6 @@
 server:
   #{开发模式运行的端口号}
-  port: 8888
+  port: 8082
 logging:
   level:
     root: info
